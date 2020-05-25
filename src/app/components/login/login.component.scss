@@ -1,0 +1,25 @@
+div.row {
+    background-color: #8491A5;
+}
+
+div.card {
+    background-color: #343a40;
+    top: 25%;
+    padding: 3rem 2rem 3rem 2rem;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 9px 26px 0 rgba(0, 0, 0, 0.19);
+    .card-body {
+        margin: 2rem 4rem;
+        form {
+            .input-group-prepend {
+                .input-group-text {
+                    background-color: #dc3545;
+                    border-color: #dc3545;
+                    color: #fff;
+                }
+            }
+            button {
+                padding: 0.5rem 3rem;
+            }
+        }
+    }
+}

@@ -1,0 +1,5 @@
+<div class="row mt-2">
+    <div class="col-lg-4 col-md-4 col-sm-6" *ngFor="let flow of flows">
+        <app-flow-card [flow]="flow" (flowClicked)="goToFlow($event)"></app-flow-card>
+    </div>
+</div>

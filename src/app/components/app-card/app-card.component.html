@@ -1,0 +1,27 @@
+<div class="card">
+    <div class="card-header">
+        <a class="btn btn-link" type="button">
+            <i class="fa fa-tasks"></i>&nbsp;{{app.name}}
+        </a>
+    </div>
+<!--    <div class="card-body">-->
+<!--        <div class="progress">-->
+<!--            <div class="progress-bar bg-success" role="progressbar" style="width:{{percent(flow.analysis.min)}}%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100">{{flow.analysis.min.toFixed()}}ms</div>-->
+<!--            <div class="progress-bar bg-warning" role="progressbar" style="width:{{percent(flow.analysis.average)}}%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100">{{flow.analysis.average.toFixed()}}ms</div>-->
+<!--            <div class="progress-bar bg-danger" role="progressbar" style="width:{{percent(flow.analysis.max)}}%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100">{{flow.analysis.max.toFixed()}}ms</div>-->
+<!--        </div>-->
+<!--        <div class="chart" *ngIf="chart">-->
+<!--            <google-chart [title]="chart.title" [type]="chart.type" [data]="chart.data" [options]="chart.options"></google-chart>-->
+<!--        </div>-->
+<!--    </div>-->
+    <div class="card-footer">
+        <span class="pull-right">
+            <i class="fa fa-clock-o"></i>&nbsp;
+            <small>{{app.analysis.end | date : 'MMM dd, yyyy HH:mm:ss'}}</small>
+        </span>
+        <span>
+            <i class="fa fa-clock-o"></i>&nbsp;
+            <small>{{app.analysis.start | date : 'MMM dd, yyyy HH:mm:ss'}}</small>
+        </span>
+    </div>
+</div>

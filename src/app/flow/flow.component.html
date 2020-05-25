@@ -1,0 +1,5 @@
+<div class="row mt-2" *ngIf="flow">
+    <div class="col-lg-4 col-md-4 col-sm-6" *ngFor="let app of flow.apps">
+        <app-app-card [app]="app"></app-app-card>
+    </div>
+</div>
